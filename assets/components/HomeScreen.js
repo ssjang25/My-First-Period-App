@@ -8,7 +8,7 @@ export default function HomeScreen ({ route, navigation }) {
   let grumpy = require("../Items/Grumpy.png");
   let neutral = require("../Items/Neutral.png");
   const grumpyArray = [birthcontrol, tampon, pad, painkillers, underwear, heatingpad, carrot, chocolate, cupcake, fruits, icecream, waterbottle];
-  const grumpyPrompts = ["It's time for her to take her birth control. Check her purse!", "Go change her tampon", "Go change her pad", "She needs some painkillers", "She needs to change her underwear", "Go get a heating pad for her cramps",
+  const grumpyPrompts = ["It's time for her to take her birth control. Check her purse!", "Go change her tampon. Check her purse!", "Go change her pad. Check her purse!", "She needs some painkillers. Check her purse!", "She needs to change her underwear. Check her purse!", "Go get a heating pad for her cramps. Check her purse!",
 "She wants to eat a vegatable. Go grab a carrot from the fridge", "She's craving sweets. Go grab some chocolate from the fridge", "She's craving sweets. Go grab a cupcake from the fridge", "She's hungry. Go grab some fruit from the fridge", "She wants to treat herself. Get some ice cream from the freezer", "She's thirsty. Go grab her water bottle from the fridge"];
 
 
@@ -31,32 +31,6 @@ export default function HomeScreen ({ route, navigation }) {
     expectedAnswer = grumpyArray[answerNum];
     return grumpyPrompt;
   }
-  //const grumpyAns = grumpyArray[answerNum];
-  //const grumpyPrompt = grumpyPrompts[answerNum]; 
-  
-  // function miniGame() {
-  //   /*const answerNum = Math.floor(Math.random() * grumpyArray.length);
-  //   const grumpyAns = grumpyArray[answerNum];
-  //   const grumpyPrompt = grumpyPrompts[answerNum]; */
-
-  //   if (route.params?.item){
-  //     if(route.params.item === grumpyAns) { // if player chooses correct item to remedy prompt
-  //       console.warn(grumpyAns)
-  //       console.warn(route.params)
-  //       mood = happy;
-  //     }
-  //     else { // if player chooses wrong item 
-  //       Alert.alert( // display an alert 
-  //         'WRONG',
-  //         '',
-  //         [
-  //           {text: "You got it wrong"}
-  //         ]
-  //       )
-  //      // item = null;
-  //     }
-  //   }
-  // }
 
   return (
     <View style={styles.container}>

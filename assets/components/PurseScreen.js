@@ -11,31 +11,6 @@ export default function PurseScreen({ navigation}) {
   const underwear = require("../Items/Underwear.png");
   const heatingpad = require("../Items/HeatingPad.png");
   
-
-  
-  // function checkGuess(pickedItem) {
-  //   if(route.location.state === pickedItem) {
-  //     Alert.alert(
-  //       'Correct!',
-  //       'Tampon has been picked up',
-  //       [
-  //         {text: 'Put In Tampon', onPress: () => {navigation.navigate('HomeScreen', {tampon})}},
-  //         {text: 'Don\'t Put In Tampon'}
-  //       ]
-  //     )
-  //   }
-  //   else {
-  //     Alert.alert(
-  //       'Wrong :(',
-  //       '',
-  //       [
-  //         {text: 'Try Again', onPress: () => {navigation.navigate('HomeScreen', {tampon})}}
-  //       ]
-  //     )
-  //   }
-  // }
-
-  
   return (
   <View style={styles.container}>
     <ImageBackground source={require('../Screens/PurseScreen.png')} style={{width: '100%', height: '100%'}}>
