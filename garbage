@@ -1,0 +1,127 @@
+// HomeScreen
+// Randomly changes girls face in 40 second intervals 
+   /* const [seconds, setSeconds] = useState(0);
+   setInterval(() => {
+    setSeconds(seconds => seconds + 1);
+ }, 10000);
+  return () => clearInterval(interval);
+
+ useEffect(() => {
+  const answerNum = Math.floor(Math.random() * grumpyArray.length);
+  const grumpyAns = grumpyArray[answerNum];
+  EventRegister.emit('buttonPressed', grumpyAns)
+  let listener = EventRegister.addEventListener(
+    'buttonPressed',
+    data => { // get random number
+    const grumpyPrompt = grumpyPrompts[answerNum]; 
+
+    miniGame(grumpyPrompt,data);
+    },
+  );
+  return () => {
+    EventRegister.removeEventListener(listener);
+    moodBoolean = true;
+  };
+}, []); */
+
+
+ /* const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+      const interval = setInterval(() => {
+       setSeconds(seconds => seconds + 1);
+       const answerNum = Math.floor(Math.random() * grumpyArray.length); // get random number
+       const grumpyPrompt = grumpyPrompts[answerNum]; // assign answer prompt
+       Alert.alert( // use answer prompt
+         grumpyPrompt,
+         '',
+         [
+           {text: "Ok"}
+         ]
+       )
+       if(this.props.route.params === grumpyArray[answerNum]) { 
+        Alert.alert(
+           'hooray',
+           'bruh',
+           [
+             {text: "ok"}
+           ]
+         )
+         clearInterval(interval);
+         mood = happy; 
+       }
+       else {
+        Alert.alert( // display an alert 
+        'WRONG',
+        '',
+        [
+          {text: "You got it wrong"}
+        ]
+      )
+      clearInterval(interval);
+       }
+
+      /*const num = Math.floor(Math.random() * grumpyArray.length); 
+      const randItem = grumpyArray[num];
+      const randPrompt = grumpyPrompts[num];
+      miniGame(randPrompt,randItem);*/
+    //}, 10000);
+    //return () => clearInterval(interval);
+  //}, []);  
+
+/*
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const [prevCount, setCount] = useState(0);
+      setCount(prevCount => prevCount + 1);
+      const num = Math.floor(Math.random() * grumpyArray.length); 
+      const randItem = grumpyArray[num];
+      const randPrompt = grumpyPrompts[num];
+      miniGame(randPrompt,randItem);
+    }, 60000);
+    return () => clearInterval(timer);
+  }, []);*/
+  
+  /*useEffect(() => {
+    const timer = setInterval(() => {
+      const [prevCount, setCount] = useState(0);
+      setCount(prevCount => prevCount + 1);
+      const answerNum = Math.floor(Math.random() * grumpyArray.length); 
+      const grumpyPrompt = grumpyPrompts[answerNum];
+      if(route.params === grumpyArray[answerNum]) {
+        grumpyPrompt,
+        "",
+        [
+          {text: "Ok"}
+        ]
+      }
+      else {
+        Alert.alert( // display an alert 
+        'WRONG',
+        '',
+        [
+          {text: "You got it wrong"}
+        ]
+      )
+      item = null;
+      }
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);*/
+  
+   /*
+    set timer
+    generate random number
+    if(route.params === itemArray[random number]) {
+      "promptArray[random number]",
+      "",
+      [
+
+      ]
+    }
+    else {
+      Alert.alert wrong
+    }
+
+
+  */
